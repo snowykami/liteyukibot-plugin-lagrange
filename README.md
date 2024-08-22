@@ -30,7 +30,7 @@ lagrange:
 
 ## 鸣谢
 
-- 感谢[LagrangeDev](https://github.com/LagrangeDev)以及所有的贡献者们
+- 感谢[LagrangeDev](https://github.com/LagrangeDev)相关项目以及所有的贡献者们
 
 ## 许可证LGPL-2.1
 
