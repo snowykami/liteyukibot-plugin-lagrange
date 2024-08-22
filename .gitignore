@@ -1,8 +1,10 @@
-.idea
+.idea/
 
 # lagrange cache
 device.json
 pdm.lock
 sig.bin
+
+.venv/
 
 .pdm-build
