@@ -18,8 +18,9 @@ from lagrange.client.client import Client
 from lagrange.client.message.elems import Text
 from liteyuki.comm.storage import shared_memory
 from liteyuki.message.event import MessageEvent
+from liteyuki import get_config
 
-lgr = Lagrange(sign_url="https://sign.lagrangecore.org/api/sign/25765", uin=0)
+lgr = Lagrange(sign_url=get_config("lagrange.sign-url"), uin=0)
 
 
 def launch():
