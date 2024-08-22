@@ -1,0 +1,49 @@
+[project]
+name = "lagrange-python"
+version = "0.1.1"
+description = "An Python Implementation of NTQQ PC Protocol"
+authors = [
+    {name="linwenxuan05"},
+    {name="wyapx"},
+]
+dependencies = [
+    "typing-extensions>=4.7.0",
+    "cryptography>=40.0.0",
+    "qrcode>=7.4.2",
+    "liteyukibot-plugin-antidislink>=0.1.0",
+    "liteyukibot>=6.3.9",
+]
+keywords = ["QQ", "Tencent", "NTQQ", "Framework", "Bot", "asyncio"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Framework :: AsyncIO",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+faster = ["ftea>=0.1.8"]
+loguru = [
+    "loguru>=0.7.2",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+includes = ["lagrange"]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "loguru>=0.7.2",
+]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
